@@ -40,6 +40,19 @@
             this.lblButton1.TabIndex = 0;
             this.lblButton1.Text = "Button 1";
             this.lblButton1.Click += new System.EventHandler(this.lblButton1_Click);
+
+            this.btnShowHello = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnShowHello
+            // 
+            this.btnShowHello.Location = new System.Drawing.Point(83, 14);
+            this.btnShowHello.Name = "btnShowHello";
+            this.btnShowHello.Size = new System.Drawing.Size(53, 23);
+            this.btnShowHello.TabIndex = 0;
+            this.btnShowHello.Text = "Hello";
+            this.btnShowHello.UseVisualStyleBackColor = true;
+            this.btnShowHello.Click += new System.EventHandler(this.btnShowHello_Click);
             // 
             // Form1
             // 
@@ -51,11 +64,15 @@
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            this.Controls.Add(this.btnShowHello);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
         }
 
         #endregion
 
         private Label lblButton1;
+        private Button btnShowHello;
     }
 }

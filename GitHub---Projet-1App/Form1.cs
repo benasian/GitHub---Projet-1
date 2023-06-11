@@ -11,5 +11,10 @@ namespace GitHub___Projet_1App
         {
             MessageBox.Show("Please, press the button, not the label", "Recommandation", MessageBoxButtons.OK);
         }
+        private void btnShowHello_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Good morning!!!", "Hello World", MessageBoxButtons.OK);
+
+        }
     }
 }
